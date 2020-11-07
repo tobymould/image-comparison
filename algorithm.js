@@ -1,66 +1,66 @@
 // --------STEP-1: FUNCTIONS RELATED TO GETTING THE DATA --------//
+// A) Convert the fetched 'object with properties' ('data' variable) into an 'array of nested-arrays'.
+// B) Convert each nested-array into an object that contains an 'imageName' and 'labelsArray' property.
 const cleanDBData = (data) => {
-    // A) Convert the fetched 'object with properties' ('data' variable) into an 'array of nested-arrays'.  
-    const arrayOfArrays = Object.entries(data);
-
-    // B) Convert each nested-array into an object that contains an 'imageName' and 'labelsArray' property.
-    const arrayOfObjects = arrayOfArrays.map((subArray) => {
-      // console.log(subArray);
+    const arrayOfImageDataObjects = Object.entries(data)   
+    .map((subArray) => {
       return {imageName: subArray[0], labelsArray: subArray[1]}
-    })
+    }) 
   
+    // console.log('arrayOfImageDataObjectsA', arrayOfImageDataObjects)
+
     // C) Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
-    const allowed = ['description', 'score'];
-    arrayOfObjects.forEach((subObject => {
-  
-      return subObject.labelsArray.map(label => {
-        // label.score.toFixed(5);
-  
-        Object.keys(label)
+    
+    arrayOfImageDataObjects.forEach((imageObject => {
+      const allowed = ['description', 'score'];
+
+      const result = imageObject.labelsArray.forEach(labelObject => {
+        Object.keys(labelObject)
         .filter(key => !allowed.includes(key))
-        .forEach(key => delete label[key])
-   
-        // console.log(label);
-        // console.log('description: ', label.description, 'score: ', label.score)
+        .forEach(key => delete labelObject[key])        
+        // return {'description': labelObject.description, 'score': labelObject.score}
       })
+
+      // return {imageName: imageObject[0], labelsArray: result}
+      return result;
   
     }))
+
+    // console.log('Filtered Object: ', arrayOfImageDataObjects)
 
     // D) Iterate the 'labelsArray' nested-array again, and delete all objects with an accuracy score < 84% (because low accuracy match).
-    arrayOfObjects.forEach((subObject => {
-      const result = subObject.labelsArray.map(label => {
-        Object.keys(label)
-        .filter(key => label.score < 0.84)
-        .forEach(key => delete label[key])
-        // console.log('description: ', label.description, 'score: ', label.score)
+    arrayOfImageDataObjects.forEach((imageObject => {
+      const result = imageObject.labelsArray.map(labelObject => {
+        const test = Object.keys(labelObject)
+        .filter(key => labelObject.score < 0.84)
+        .forEach(key => delete labelObject[key])
       })
-      // const result2 = result.labelsArray.filter(label => Object.keys(label) !== null)
+      
       return result
-      // return {"labelsArray": fixed};
     }))
+
+    // arrayOfImageDataObjects.forEach((imageObject => {
+    //   const result = imageObject.labelsArray.map(labelObject => {
+    //     const test = Object.keys(labelObject)
+    //     .filter(key => Object.keys(labelObject).length !== 0)
+    //     .forEach(key => delete labelObject[key])
+    //   })
+    // }))
   
     // E) Return the cleaned data
-    return arrayOfObjects;
+    return arrayOfImageDataObjects;
 }
 
 const cleanImgData = (data) => {
-  // A) Convert the fetched 'object with properties' ('data' variable) into an 'array of nested-arrays'.  
-  const arrayOfArrays = Object.entries(data);
+  const isolatedLabelObject = Object.entries(data).find((subArrays) => subArrays.includes("labelAnnotations"));
+  const destructuredObject1 = {imageName: 'submittedImage', labelsArray: isolatedLabelObject[1]} 
 
-  // B) Convert each nested-array into an object that contains an 'imageName' and 'labelsArray' property.
-  const arrayOfObjects = arrayOfArrays.find((subArrays) => {
-    // console.log(subArrays);
-    return subArrays.includes("labelAnnotations");
-    // const result = subArrays.find(array => {
-    //   return array[3]
-    //   // return array.includes("labelAnnotations");
-    // })
-    // // console.log(subArray);
-    // return {imageName: result[0], labelsArray: result[1]}
-  })
+  // C) Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
+  const filteredLabelsArray = destructuredObject1.labelsArray.map((labelObject => {return {'description': labelObject.description, 'score': labelObject.score}}))
+  const destructuredObject2 = {imageName: 'submittedImage', labelsArray: filteredLabelsArray} 
 
-  // E) Return the cleaned data
-  return {imageName: 'submittedImage', labelsArray: arrayOfObjects[1]} ;
+  // console.log('destructuredObject2: ', destructuredObject2);
+  return destructuredObject2;
 }
 
 const errorHandler = (response, msg) => {
@@ -68,7 +68,6 @@ const errorHandler = (response, msg) => {
     throw new Error(`cannot fetch the ${msg}`);
   } 
 }
-
 
 
 // 1) Submit a Request to retrieve the database of data.
@@ -92,13 +91,37 @@ const ProcessDataFromImg = async () => {
   return cleanedDataImg
 }
 
+const broadCategoryCheckAlgorithm = (dataFromSubmitted) => {
+  const lookUpTable = [{
+        generalCategory: ['Fruit', 'Vegetable', "Flowering plant", 'Tree', 'Cut flowers']
+      },];
+
+  const comparisonResult = dataFromSubmitted.labelsArray.forEach(labelObject => {
+    return lookUpTable[0].generalCategory.forEach(category => 
+      labelObject.description === category ? categoryMatched = category : null
+    )
+  })
+
+  return categoryMatched;
+}
+
+const BroadMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => {
+  
+}
+
 const runTheComparision = async () => {
     try {
-      const data1 = await ProcessDataFromDB();
-      const data2 = await ProcessDataFromImg();
+      const dataFromDB = await ProcessDataFromDB();
+      const dataFromSubmitted = await ProcessDataFromImg();
 
-      console.log('data1: ', data1);
-      console.log('data2: ', data2);
+      const submittedImageBroadCategoryMatch = broadCategoryCheckAlgorithm(dataFromSubmitted);
+      const imageMatch = BroadMatchToDBImagesAlgorithm(dataFromDB,submittedImageBroadCategoryMatch);
+
+
+      console.log('imageMatch: ', imageMatch);
+      console.log('submittedImageBroadCategoryMatch: ', submittedImageBroadCategoryMatch);
+      console.log('dataFromDB: ', dataFromDB);
+      console.log('dataFromSubmitted: ', dataFromSubmitted);
 
 
     } catch(err){
