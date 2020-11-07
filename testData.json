@@ -1,0 +1,382 @@
+{
+  "cropHintsAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 360
+            },
+            {
+              "x": 1128
+            },
+            {
+              "x": 1128,
+              "y": 959
+            },
+            {
+              "x": 360,
+              "y": 959
+            }
+          ]
+        },
+        "confidence": 0.67382807,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 288
+            },
+            {
+              "x": 1248
+            },
+            {
+              "x": 1248,
+              "y": 959
+            },
+            {
+              "x": 288,
+              "y": 959
+            }
+          ]
+        },
+        "confidence": 0.5390625,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 216
+            },
+            {
+              "x": 1368
+            },
+            {
+              "x": 1368,
+              "y": 959
+            },
+            {
+              "x": 216,
+              "y": 959
+            }
+          ]
+        },
+        "confidence": 0.44921875,
+        "importanceFraction": 1
+      }
+    ]
+  },
+  "imagePropertiesAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 360
+            },
+            {
+              "x": 1128
+            },
+            {
+              "x": 1128,
+              "y": 959
+            },
+            {
+              "x": 360,
+              "y": 959
+            }
+          ]
+        },
+        "confidence": 0.67382807,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 288
+            },
+            {
+              "x": 1248
+            },
+            {
+              "x": 1248,
+              "y": 959
+            },
+            {
+              "x": 288,
+              "y": 959
+            }
+          ]
+        },
+        "confidence": 0.5390625,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 216
+            },
+            {
+              "x": 1368
+            },
+            {
+              "x": 1368,
+              "y": 959
+            },
+            {
+              "x": 216,
+              "y": 959
+            }
+          ]
+        },
+        "confidence": 0.44921875,
+        "importanceFraction": 1
+      }
+    ],
+    "dominantColors": {
+      "colors": [
+        {
+          "color": {
+            "blue": 12,
+            "green": 165,
+            "red": 161
+          },
+          "hex": "A1A50C",
+          "percent": 29.455258487780174,
+          "percentRounded": 29,
+          "pixelFraction": 0.13933334,
+          "rgb": "161, 165,\n 12",
+          "score": 0.2614045
+        },
+        {
+          "color": {
+            "blue": 153,
+            "green": 165,
+            "red": 114
+          },
+          "hex": "72A599",
+          "percent": 0.3308905533851927,
+          "percentRounded": 0,
+          "pixelFraction": 0.0122,
+          "rgb": "114, 165,\n 153",
+          "score": 0.002936531
+        },
+        {
+          "color": {
+            "blue": 36,
+            "green": 195,
+            "red": 193
+          },
+          "hex": "C1C324",
+          "percent": 21.16620465607314,
+          "percentRounded": 21,
+          "pixelFraction": 0.08506667,
+          "rgb": "193, 195,\n 36",
+          "score": 0.18784222
+        },
+        {
+          "color": {
+            "blue": 122,
+            "green": 119,
+            "red": 128
+          },
+          "hex": "80777A",
+          "percent": 0.17202691498179123,
+          "percentRounded": 0,
+          "pixelFraction": 0.016533334,
+          "rgb": "128, 119,\n 122",
+          "score": 0.0015266751
+        },
+        {
+          "color": {
+            "blue": 52,
+            "green": 162,
+            "red": 147
+          },
+          "hex": "93A234",
+          "percent": 12.68590114590397,
+          "percentRounded": 13,
+          "pixelFraction": 0.0326,
+          "rgb": "147, 162,\n 52",
+          "score": 0.11258267
+        },
+        {
+          "color": {
+            "blue": 19,
+            "green": 209,
+            "red": 214
+          },
+          "hex": "D6D113",
+          "percent": 9.682887825505167,
+          "percentRounded": 10,
+          "pixelFraction": 0.034466665,
+          "rgb": "214, 209,\n 19",
+          "score": 0.08593204
+        },
+        {
+          "color": {
+            "blue": 51,
+            "green": 235,
+            "red": 239
+          },
+          "hex": "EFEB33",
+          "percent": 9.317299597478247,
+          "percentRounded": 9,
+          "pixelFraction": 0.054133333,
+          "rgb": "239, 235,\n 51",
+          "score": 0.08268758
+        },
+        {
+          "color": {
+            "blue": 22,
+            "green": 135,
+            "red": 121
+          },
+          "hex": "798716",
+          "percent": 8.677349487075327,
+          "percentRounded": 9,
+          "pixelFraction": 0.0264,
+          "rgb": "121, 135,\n 22",
+          "score": 0.07700826
+        },
+        {
+          "color": {
+            "blue": 85,
+            "green": 237,
+            "red": 241
+          },
+          "hex": "F1ED55",
+          "percent": 8.468203849848027,
+          "percentRounded": 8,
+          "pixelFraction": 0.033066668,
+          "rgb": "241, 237,\n 85",
+          "score": 0.07515217
+        },
+        {
+          "color": {
+            "blue": 142,
+            "green": 111,
+            "red": 125
+          },
+          "hex": "7D6F8E",
+          "percent": 0.04397748196896391,
+          "percentRounded": 0,
+          "pixelFraction": 0.001,
+          "rgb": "125, 111,\n 142",
+          "score": 0.00039028385
+        }
+      ]
+    }
+  },
+  "labelAnnotations": [
+    {
+      "description": "Flower",
+      "mid": "/m/0c9ph5",
+      "score": 0.99559903,
+      "topicality": 0.99559903
+    },
+    {
+      "description": "Flowering plant",
+      "mid": "/m/04sjm",
+      "score": 0.98545843,
+      "topicality": 0.98545843
+    },
+    {
+      "description": "Yellow",
+      "mid": "/m/088fh",
+      "score": 0.9585659,
+      "topicality": 0.9585659
+    },
+    {
+      "description": "Petal",
+      "mid": "/m/016q19",
+      "score": 0.9547519,
+      "topicality": 0.9547519
+    },
+    {
+      "description": "Plant",
+      "mid": "/m/05s2s",
+      "score": 0.9138531,
+      "topicality": 0.9138531
+    },
+    {
+      "description": "Wildflower",
+      "mid": "/m/03f35r",
+      "score": 0.6984737,
+      "topicality": 0.6984737
+    },
+    {
+      "description": "Narcissus",
+      "mid": "/m/012047",
+      "score": 0.660141,
+      "topicality": 0.660141
+    },
+    {
+      "description": "Wood sorrel family",
+      "mid": "/m/03709s",
+      "score": 0.53199166,
+      "topicality": 0.53199166
+    },
+    {
+      "description": "Evening primrose family",
+      "mid": "/m/03zg3n",
+      "score": 0.5270197,
+      "topicality": 0.5270197
+    },
+    {
+      "description": "Amaryllis family",
+      "mid": "/m/02v3w4",
+      "score": 0.5268638,
+      "topicality": 0.5268638
+    },
+    {
+      "description": "Evening primrose",
+      "mid": "/m/02t0zs",
+      "score": 0.5084692,
+      "topicality": 0.5084692
+    },
+    {
+      "description": "Perennial plant",
+      "mid": "/m/036p57",
+      "score": 0.50349534,
+      "topicality": 0.50349534
+    }
+  ],
+  "localizedObjectAnnotations": [
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.1874445
+          },
+          {
+            "x": 0.88720936
+          },
+          {
+            "x": 0.88720936,
+            "y": 0.985522
+          },
+          {
+            "x": 0.1874445,
+            "y": 0.985522
+          }
+        ]
+      },
+      "mid": "/m/0c9ph5",
+      "name": "Flower",
+      "score": 0.93352634
+    }
+  ],
+  "safeSearchAnnotation": {
+    "adult": "VERY_UNLIKELY",
+    "medical": "VERY_UNLIKELY",
+    "racy": "VERY_UNLIKELY",
+    "spoof": "VERY_UNLIKELY",
+    "violence": "VERY_UNLIKELY"
+  }
+}
