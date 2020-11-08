@@ -1,0 +1,545 @@
+{
+  "cropHintsAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 50
+            },
+            {
+              "x": 544
+            },
+            {
+              "x": 544,
+              "y": 617
+            },
+            {
+              "x": 50,
+              "y": 617
+            }
+          ]
+        },
+        "confidence": 0.5905991,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 618
+            },
+            {
+              "x": 618,
+              "y": 617
+            },
+            {
+              "y": 617
+            }
+          ]
+        },
+        "confidence": 0.47247928,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 741
+            },
+            {
+              "x": 741,
+              "y": 617
+            },
+            {
+              "y": 617
+            }
+          ]
+        },
+        "confidence": 0.3937327,
+        "importanceFraction": 1
+      }
+    ]
+  },
+  "imagePropertiesAnnotation": {
+    "cropHints": [
+      {
+        "boundingPoly": {
+          "vertices": [
+            {
+              "x": 50
+            },
+            {
+              "x": 544
+            },
+            {
+              "x": 544,
+              "y": 617
+            },
+            {
+              "x": 50,
+              "y": 617
+            }
+          ]
+        },
+        "confidence": 0.5905991,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 618
+            },
+            {
+              "x": 618,
+              "y": 617
+            },
+            {
+              "y": 617
+            }
+          ]
+        },
+        "confidence": 0.47247928,
+        "importanceFraction": 1
+      },
+      {
+        "boundingPoly": {
+          "vertices": [
+            {},
+            {
+              "x": 741
+            },
+            {
+              "x": 741,
+              "y": 617
+            },
+            {
+              "y": 617
+            }
+          ]
+        },
+        "confidence": 0.3937327,
+        "importanceFraction": 1
+      }
+    ],
+    "dominantColors": {
+      "colors": [
+        {
+          "color": {
+            "blue": 3,
+            "green": 42,
+            "red": 240
+          },
+          "hex": "F02A03",
+          "percent": 34.773715797742284,
+          "percentRounded": 35,
+          "pixelFraction": 0.029690692,
+          "rgb": "240, 42,\n 3",
+          "score": 0.16050677
+        },
+        {
+          "color": {
+            "blue": 12,
+            "green": 164,
+            "red": 161
+          },
+          "hex": "A1A40C",
+          "percent": 19.719721590192364,
+          "percentRounded": 20,
+          "pixelFraction": 0.009921214,
+          "rgb": "161, 164,\n 12",
+          "score": 0.0910213
+        },
+        {
+          "color": {
+            "blue": 2,
+            "green": 30,
+            "red": 167
+          },
+          "hex": "A71E02",
+          "percent": 13.106544175190606,
+          "percentRounded": 13,
+          "pixelFraction": 0.021812081,
+          "rgb": "167, 30,\n 2",
+          "score": 0.060496528
+        },
+        {
+          "color": {
+            "blue": 23,
+            "green": 97,
+            "red": 39
+          },
+          "hex": "276117",
+          "percent": 7.244368046599579,
+          "percentRounded": 7,
+          "pixelFraction": 0.12102422,
+          "rgb": "39, 97,\n 23",
+          "score": 0.03343819
+        },
+        {
+          "color": {
+            "blue": 9,
+            "green": 128,
+            "red": 121
+          },
+          "hex": "798009",
+          "percent": 7.218217148795817,
+          "percentRounded": 7,
+          "pixelFraction": 0.010285964,
+          "rgb": "121, 128,\n 9",
+          "score": 0.033317484
+        },
+        {
+          "color": {
+            "blue": 88,
+            "green": 127,
+            "red": 93
+          },
+          "hex": "5D7F58",
+          "percent": 6.791930173424154,
+          "percentRounded": 7,
+          "pixelFraction": 0.037934054,
+          "rgb": "93, 127,\n 88",
+          "score": 0.03134985
+        },
+        {
+          "color": {
+            "blue": 53,
+            "green": 171,
+            "red": 126
+          },
+          "hex": "7EAB35",
+          "percent": 3.4617660976962625,
+          "percentRounded": 3,
+          "pixelFraction": 0.011088416,
+          "rgb": "126, 171,\n 53",
+          "score": 0.015978646
+        },
+        {
+          "color": {
+            "blue": 150,
+            "green": 160,
+            "red": 116
+          },
+          "hex": "74A096",
+          "percent": 3.4018178736834686,
+          "percentRounded": 3,
+          "pixelFraction": 0.018164575,
+          "rgb": "116, 160,\n 150",
+          "score": 0.01570194
+        },
+        {
+          "color": {
+            "blue": 64,
+            "green": 107,
+            "red": 249
+          },
+          "hex": "F96B40",
+          "percent": 2.527845665809764,
+          "percentRounded": 3,
+          "pixelFraction": 0.005981908,
+          "rgb": "249, 107,\n 64",
+          "score": 0.011667903
+        },
+        {
+          "color": {
+            "blue": 5,
+            "green": 24,
+            "red": 108
+          },
+          "hex": "6C1805",
+          "percent": 1.7540734308657004,
+          "percentRounded": 2,
+          "pixelFraction": 0.0051794574,
+          "rgb": "108, 24,\n 5",
+          "score": 0.008096364
+        }
+      ]
+    }
+  },
+  "labelAnnotations": [
+    {
+      "description": "Natural foods",
+      "mid": "/m/08tlbj",
+      "score": 0.9950245,
+      "topicality": 0.9950245
+    },
+    {
+      "description": "Local food",
+      "mid": "/m/01hxyd",
+      "score": 0.9865191,
+      "topicality": 0.9865191
+    },
+    {
+      "description": "Bush tomato",
+      "mid": "/m/025tg_m",
+      "score": 0.96650577,
+      "topicality": 0.96650577
+    },
+    {
+      "description": "Plant",
+      "mid": "/m/05s2s",
+      "score": 0.9635069,
+      "topicality": 0.9635069
+    },
+    {
+      "description": "Tomato",
+      "mid": "/m/07j87",
+      "score": 0.9527027,
+      "topicality": 0.9527027
+    },
+    {
+      "description": "Fruit",
+      "mid": "/m/02xwb",
+      "score": 0.95266885,
+      "topicality": 0.95266885
+    },
+    {
+      "description": "Solanum",
+      "mid": "/m/0hfcz",
+      "score": 0.95184946,
+      "topicality": 0.95184946
+    },
+    {
+      "description": "Vegetable",
+      "mid": "/m/0f4s2w",
+      "score": 0.9501302,
+      "topicality": 0.9501302
+    },
+    {
+      "description": "Food",
+      "mid": "/m/02wbm",
+      "score": 0.92737365,
+      "topicality": 0.92737365
+    },
+    {
+      "description": "Plum tomato",
+      "mid": "/m/09y4sj",
+      "score": 0.8994806,
+      "topicality": 0.8994806
+    },
+    {
+      "description": "Vegan nutrition",
+      "mid": "/m/052w_x",
+      "score": 0.82514644,
+      "topicality": 0.82514644
+    },
+    {
+      "description": "Flowering plant",
+      "mid": "/m/04sjm",
+      "score": 0.8185051,
+      "topicality": 0.8185051
+    },
+    {
+      "description": "Nightshade family",
+      "mid": "/m/06rv4",
+      "score": 0.80101436,
+      "topicality": 0.80101436
+    },
+    {
+      "description": "Vegetarian food",
+      "mid": "/m/07_lq",
+      "score": 0.79042935,
+      "topicality": 0.79042935
+    },
+    {
+      "description": "Produce",
+      "mid": "/m/036qh8",
+      "score": 0.78145605,
+      "topicality": 0.78145605
+    },
+    {
+      "description": "Cherry Tomatoes",
+      "mid": "/m/08b4g7",
+      "score": 0.7667199,
+      "topicality": 0.7667199
+    },
+    {
+      "description": "Whole food",
+      "mid": "/m/0cyz6w",
+      "score": 0.7524613,
+      "topicality": 0.7524613
+    },
+    {
+      "description": "Flower",
+      "mid": "/m/0c9ph5",
+      "score": 0.7237995,
+      "topicality": 0.7237995
+    },
+    {
+      "description": "Superfood",
+      "mid": "/m/04jdhxy",
+      "score": 0.5005363,
+      "topicality": 0.5005363
+    },
+    {
+      "description": "Cherry",
+      "mid": "/m/0f8sw",
+      "score": 0.50052977,
+      "topicality": 0.50052977
+    }
+  ],
+  "localizedObjectAnnotations": [
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.26774064,
+            "y": 0.4633994
+          },
+          {
+            "x": 0.463197,
+            "y": 0.4633994
+          },
+          {
+            "x": 0.463197,
+            "y": 0.7722016
+          },
+          {
+            "x": 0.26774064,
+            "y": 0.7722016
+          }
+        ]
+      },
+      "mid": "/m/07j87",
+      "name": "Tomato",
+      "score": 0.91528285
+    },
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.13457908,
+            "y": 0.6351406
+          },
+          {
+            "x": 0.35565087,
+            "y": 0.6351406
+          },
+          {
+            "x": 0.35565087,
+            "y": 0.97879964
+          },
+          {
+            "x": 0.13457908,
+            "y": 0.97879964
+          }
+        ]
+      },
+      "mid": "/m/07j87",
+      "name": "Tomato",
+      "score": 0.90511876
+    },
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.028113656,
+            "y": 0.4135474
+          },
+          {
+            "x": 0.26238143,
+            "y": 0.4135474
+          },
+          {
+            "x": 0.26238143,
+            "y": 0.7499575
+          },
+          {
+            "x": 0.028113656,
+            "y": 0.7499575
+          }
+        ]
+      },
+      "mid": "/m/07j87",
+      "name": "Tomato",
+      "score": 0.9050931
+    },
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.24719338,
+            "y": 0.108821265
+          },
+          {
+            "x": 0.4837152,
+            "y": 0.108821265
+          },
+          {
+            "x": 0.4837152,
+            "y": 0.4878085
+          },
+          {
+            "x": 0.24719338,
+            "y": 0.4878085
+          }
+        ]
+      },
+      "mid": "/m/07j87",
+      "name": "Tomato",
+      "score": 0.8981702
+    },
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.10775622,
+            "y": 0.1377086
+          },
+          {
+            "x": 0.29317,
+            "y": 0.1377086
+          },
+          {
+            "x": 0.29317,
+            "y": 0.461701
+          },
+          {
+            "x": 0.10775622,
+            "y": 0.461701
+          }
+        ]
+      },
+      "mid": "/m/07j87",
+      "name": "Tomato",
+      "score": 0.8944679
+    },
+    {
+      "boundingPoly": {
+        "normalizedVertices": [
+          {
+            "x": 0.77682155,
+            "y": 0.49935088
+          },
+          {
+            "x": 0.8606439,
+            "y": 0.49935088
+          },
+          {
+            "x": 0.8606439,
+            "y": 0.6464203
+          },
+          {
+            "x": 0.77682155,
+            "y": 0.6464203
+          }
+        ]
+      },
+      "mid": "/m/07j87",
+      "name": "Tomato",
+      "score": 0.6793297
+    }
+  ],
+  "safeSearchAnnotation": {
+    "adult": "VERY_UNLIKELY",
+    "medical": "VERY_UNLIKELY",
+    "racy": "VERY_UNLIKELY",
+    "spoof": "VERY_UNLIKELY",
+    "violence": "VERY_UNLIKELY"
+  }
+}

@@ -21,16 +21,14 @@ const getJsonData = async (url) => {
 }
 
 const removeLowAccuracyLabels = (imageObject) => {
-  console.log('test: ', imageObject);
 
   imageObject.labelsArray.map(labelObject => {
     Object.keys(labelObject)
-    .filter(key => labelObject.score < 0.8)
+    .filter(key => labelObject.score < 0.6)
     .forEach(key => delete labelObject[key])
     
   });
 
-  console.log('test5: ', imageObject);
   return imageObject;
 }
 
@@ -39,8 +37,8 @@ const filterLabelsArray = (imageObject) => {
     labelObject.score = labelObject.score.toFixed(2);
     return {'description': labelObject.description, 'score': labelObject.score}
   }))
-  const imageObjectFiltered = {imageName: 'submittedImage', labelsArray: filteredLabelsArray}
-  console.log('test9: ', imageObjectFiltered)
+
+  const imageObjectFiltered = {imageName: imageObject.imageName, labelsArray: filteredLabelsArray}
 
   return imageObjectFiltered;
 }
@@ -66,28 +64,27 @@ const cleanDBData = (data) => {
 }
 
 const cleanImgData = (data) => {
-const isolatedLabelObject = Object.entries(data).find((subArrays) => subArrays.includes("labelAnnotations"));
-const imageObject = {imageName: 'submittedImage', labelsArray: isolatedLabelObject[1]} 
+  const isolatedLabelObject = Object.entries(data).find((subArrays) => subArrays.includes("labelAnnotations"));
+  const imageObject = {imageName: 'submittedImage', labelsArray: isolatedLabelObject[1]} 
 
-// C) Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
-const imageObjectFiltered = filterLabelsArray(imageObject);
+  // C) Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
+  const imageObjectFiltered = filterLabelsArray(imageObject);
 
-removeLowAccuracyLabels(imageObjectFiltered);
+  removeLowAccuracyLabels(imageObjectFiltered);
 
-// console.log('imageObjectFiltered: ', imageObjectFiltered);
-return imageObjectFiltered;
+  return imageObjectFiltered;
 }
 
 const errorHandler = (response, msg) => {
-if (response.status !== 200) {
-  throw new Error(`cannot fetch the ${msg}`);
-} 
+  if (response.status !== 200) {
+    throw new Error(`cannot fetch the ${msg}`);
+  } 
 }
 
-const broadCategoryCheckAlgorithm = (dataFromSubmitted) => {
+const typeCategoryCheckAlgorithm = (dataFromSubmitted) => {
   let categoryMatched;
 
-  const comparisonResult = dataFromSubmitted.labelsArray.forEach(labelObject => {
+  dataFromSubmitted.labelsArray.forEach(labelObject => {
     return lookUpTable[0].generalCategory.forEach(category => 
       labelObject.description === category ? categoryMatched = category : null
     )
@@ -96,7 +93,18 @@ const broadCategoryCheckAlgorithm = (dataFromSubmitted) => {
   return categoryMatched;
 }
 
-const BroadMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => {
+const colourCategoryCheckAlgorithm = (dataFromSubmitted) => {
+  let categoryMatched;
+  
+  dataFromSubmitted.labelsArray.forEach(labelObject => {
+    return lookUpTable[1].colourCategory.forEach(category => 
+      labelObject.description === category ? categoryMatched = category : null
+    )
+  })
+  return categoryMatched;
+}
+
+const typeMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => {
   const matchingImages = [];
 
   dataFromDB.forEach(imageObject => {
@@ -113,30 +121,36 @@ const BroadMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => 
 // -------------------------------------------------------------------------------
 
 const ProcessDataFromDB = async () => {
-  const dataFromDB = await getJsonData('data.json')
+  const dataFromDB = await getJsonData('./data/data.json')
   const cleanedDataDB = cleanDBData(dataFromDB);
   return cleanedDataDB
 }
 
 const ProcessDataFromImg = async () => {
-  const dataFromSubmittedImage = await getJsonData('testData2.json')
+  const dataFromSubmittedImage = await getJsonData('./data/image5.json')
   const cleanedDataImg = cleanImgData(dataFromSubmittedImage);
   return cleanedDataImg
 }
 
 const runTheComparision = async () => {
     try {
-      const dataFromSubmitted = await ProcessDataFromImg();
       const dataFromDB = await ProcessDataFromDB();
+      const dataFromSubmitted = await ProcessDataFromImg();
 
-      const submittedImageBroadCategoryMatch = broadCategoryCheckAlgorithm(dataFromSubmitted);
-      const imageMatch = BroadMatchToDBImagesAlgorithm(dataFromDB,submittedImageBroadCategoryMatch);
+      const typeCategoryMatch = typeCategoryCheckAlgorithm(dataFromSubmitted);
+      
+      if (typeCategoryMatch.length !== 0){
+        const imageMatch = typeMatchToDBImagesAlgorithm(dataFromDB, typeCategoryMatch);
+      } else {
+        const colourCategoryMatch = colourCategoryCheckAlgorithm(dataFromSubmitted);
+      }
+      
 
       // imageMatch.length > 3 ? specificCategoryCheckerAlgorithm() : null;
       
       console.log('dataFromDB: ', dataFromDB);
       console.log('dataFromSubmitted: ', dataFromSubmitted);
-      console.log('submittedImageBroadCategoryMatch: ', submittedImageBroadCategoryMatch);
+      console.log('TypeCategoryMatch: ', typeCategoryMatch);
       console.log('imageMatch: ', imageMatch);
 
 
@@ -206,3 +220,50 @@ runTheComparision();
       
     // });
     // return
+
+
+
+    // const broadCategoryCheckAlgorithm = (dataFromSubmitted) => {
+    //   let categoryMatched = [{"broad": []}, {'colour': []}]
+    
+    //   dataFromSubmitted.labelsArray.forEach(labelObject => {
+    //     console.log(categoryMatched.broad)
+    
+    //     return lookUpTable[0].generalCategory.forEach(category => 
+    //       labelObject.description === category ? categoryMatched[0].broad.push(category) : null
+    //     )
+    //   })
+      
+    //   dataFromSubmitted.labelsArray.forEach(labelObject => {
+    //     return lookUpTable[1].colourCategory.forEach(category => 
+    //       labelObject.description === category ? categoryMatched[1].colour.push(category) : null
+    //     )
+    //   })
+    
+    //   console.log(categoryMatched);
+    //   return categoryMatched;
+    // }
+    
+    // const BroadMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => {
+    //   const matchingImages = [];
+    
+    //   dataFromDB.forEach(imageObject => {
+    //     console.log('imageObject: ', imageObject)
+    
+    //     imageObject.labelsArray.forEach(labelObject => {
+    //       console.log('labelObject: ', labelObject)
+          
+    //       categoryOfSubmittedImage[0].broad.forEach(category => {
+    //         console.log('category: ', category)
+    //         console.log('labelObject.description: ', labelObject.description)
+    //         console.log('imageObject2: ', imageObject)
+    //         labelObject.description === category ? matchingImages.push(imageObject) : null
+    //       })
+    //     }
+    //     );
+    
+    //   })
+    
+    //   console.log('matchingImages: ', matchingImages)
+    //   return matchingImages;
+    // }
