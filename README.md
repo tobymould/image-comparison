@@ -1,6 +1,6 @@
 # Image similarity algorithm
 
-When a user posts on Candide, we might assume that they would be interested in
+When a user posts, we might assume that they would be interested in
 posts similar to theirs, or at least referring to similar content. One way to do
 this might be to find other posts with similar images to theirs.
 
