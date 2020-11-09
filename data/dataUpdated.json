@@ -1,0 +1,1742 @@
+
+  
+  {
+    "img1.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.94345975,
+        "topicality": 0.94345975
+      },
+      {
+        "description": "Geraniaceae",
+        "mid": "/m/01l6ls",
+        "score": 0.7377576,
+        "topicality": 0.7377576
+      },
+      {
+        "description": "Melastome family",
+        "mid": "/m/03f956",
+        "score": 0.69844115,
+        "topicality": 0.69844115
+      },
+      {
+        "description": "Geranium",
+        "mid": "/m/0frtt",
+        "score": 0.6628907,
+        "topicality": 0.6628907
+      },
+      {
+        "description": "Wildflower",
+        "mid": "/m/03f35r",
+        "score": 0.66275436,
+        "topicality": 0.66275436
+      },
+      {
+        "description": "Geraniales",
+        "mid": "/m/01l6kn",
+        "score": 0.60700786,
+        "topicality": 0.60700786
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.50349534,
+        "topicality": 0.50349534
+      }
+    ], 
+  "img2.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Yellow",
+        "mid": "/m/088fh",
+        "score": 0.9585659,
+        "topicality": 0.9585659
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.9547519,
+        "topicality": 0.9547519
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9138531,
+        "topicality": 0.9138531
+      },
+      {
+        "description": "Wildflower",
+        "mid": "/m/03f35r",
+        "score": 0.6984737,
+        "topicality": 0.6984737
+      },
+      {
+        "description": "Narcissus",
+        "mid": "/m/012047",
+        "score": 0.660141,
+        "topicality": 0.660141
+      },
+      {
+        "description": "Wood sorrel family",
+        "mid": "/m/03709s",
+        "score": 0.53199166,
+        "topicality": 0.53199166
+      },
+      {
+        "description": "Evening primrose family",
+        "mid": "/m/03zg3n",
+        "score": 0.5270197,
+        "topicality": 0.5270197
+      },
+      {
+        "description": "Amaryllis family",
+        "mid": "/m/02v3w4",
+        "score": 0.5268638,
+        "topicality": 0.5268638
+      },
+      {
+        "description": "Evening primrose",
+        "mid": "/m/02t0zs",
+        "score": 0.5084692,
+        "topicality": 0.5084692
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.50349534,
+        "topicality": 0.50349534
+      }
+    ],
+  "img3.jpg": [
+      {
+        "description": "Nature",
+        "mid": "/m/05h0n",
+        "score": 0.95761263,
+        "topicality": 0.95761263
+      },
+      {
+        "description": "Green algae",
+        "mid": "/m/01y24v",
+        "score": 0.923971,
+        "topicality": 0.923971
+      },
+      {
+        "description": "Green",
+        "mid": "/m/038hg",
+        "score": 0.9068462,
+        "topicality": 0.9068462
+      },
+      {
+        "description": "Algae",
+        "mid": "/m/0hlw",
+        "score": 0.89177734,
+        "topicality": 0.89177734
+      },
+      {
+        "description": "Grass",
+        "mid": "/m/08t9c_",
+        "score": 0.85048985,
+        "topicality": 0.85048985
+      },
+      {
+        "description": "Non-vascular land plant",
+        "mid": "/m/01tbcv",
+        "score": 0.84216756,
+        "topicality": 0.84216756
+      },
+      {
+        "description": "Rock",
+        "mid": "/m/01cbzq",
+        "score": 0.8274686,
+        "topicality": 0.8274686
+      },
+      {
+        "description": "Moss",
+        "mid": "/m/0184yy",
+        "score": 0.8139699,
+        "topicality": 0.8139699
+      },
+      {
+        "description": "Chlorophyta",
+        "mid": "/m/01zgr",
+        "score": 0.75524604,
+        "topicality": 0.75524604
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.75081295,
+        "topicality": 0.75081295
+      },
+      {
+        "description": "Organism",
+        "mid": "/m/05nnm",
+        "score": 0.71515906,
+        "topicality": 0.71515906
+      },
+      {
+        "description": "Sea lettuce",
+        "mid": "/m/04cnqy",
+        "score": 0.70326114,
+        "topicality": 0.70326114
+      },
+      {
+        "description": "Aquatic plant",
+        "mid": "/m/013sbk",
+        "score": 0.677249,
+        "topicality": 0.677249
+      },
+      {
+        "description": "Landscape",
+        "mid": "/m/025s3q0",
+        "score": 0.59305805,
+        "topicality": 0.59305805
+      },
+      {
+        "description": "Vegetarian food",
+        "mid": "/m/07_lq",
+        "score": 0.5656321,
+        "topicality": 0.5656321
+      },
+      {
+        "description": "Groundcover",
+        "mid": "/m/018ssc",
+        "score": 0.5380866,
+        "topicality": 0.5380866
+      }
+    ],
+  "img4.jpg": [
+      {
+        "description": "Banana family",
+        "mid": "/m/013xk6",
+        "score": 0.9796151,
+        "topicality": 0.9796151
+      },
+      {
+        "description": "Saba banana",
+        "mid": "/m/0g5pzh_",
+        "score": 0.97534037,
+        "topicality": 0.97534037
+      },
+      {
+        "description": "Banana leaf",
+        "mid": "/m/0262mx0",
+        "score": 0.97186834,
+        "topicality": 0.97186834
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Banana",
+        "mid": "/m/09qck",
+        "score": 0.96213436,
+        "topicality": 0.96213436
+      },
+      {
+        "description": "Leaf",
+        "mid": "/m/09t49",
+        "score": 0.94641715,
+        "topicality": 0.94641715
+      },
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.92675585,
+        "topicality": 0.92675585
+      },
+      {
+        "description": "Matoke",
+        "mid": "/m/08q1pn",
+        "score": 0.90656745,
+        "topicality": 0.90656745
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.8918773,
+        "topicality": 0.8918773
+      },
+      {
+        "description": "Ensete",
+        "mid": "/m/013yjr",
+        "score": 0.84736437,
+        "topicality": 0.84736437
+      },
+      {
+        "description": "Cooking plantain",
+        "mid": "/m/09qdd",
+        "score": 0.81270075,
+        "topicality": 0.81270075
+      },
+      {
+        "description": "Fruit",
+        "mid": "/m/02xwb",
+        "score": 0.7434523,
+        "topicality": 0.7434523
+      },
+      {
+        "description": "Tree",
+        "mid": "/m/07j7r",
+        "score": 0.68692183,
+        "topicality": 0.68692183
+      },
+      {
+        "description": "Gnetae",
+        "mid": "/m/01jkf3",
+        "score": 0.53581166,
+        "topicality": 0.53581166
+      }
+    ],
+  "img5.jpg": [
+      {
+        "description": "Natural foods",
+        "mid": "/m/08tlbj",
+        "score": 0.9950245,
+        "topicality": 0.9950245
+      },
+      {
+        "description": "Local food",
+        "mid": "/m/01hxyd",
+        "score": 0.9865191,
+        "topicality": 0.9865191
+      },
+      {
+        "description": "Bush tomato",
+        "mid": "/m/025tg_m",
+        "score": 0.96650577,
+        "topicality": 0.96650577
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Tomato",
+        "mid": "/m/07j87",
+        "score": 0.9527027,
+        "topicality": 0.9527027
+      },
+      {
+        "description": "Fruit",
+        "mid": "/m/02xwb",
+        "score": 0.95266885,
+        "topicality": 0.95266885
+      },
+      {
+        "description": "Solanum",
+        "mid": "/m/0hfcz",
+        "score": 0.95184946,
+        "topicality": 0.95184946
+      },
+      {
+        "description": "Vegetable",
+        "mid": "/m/0f4s2w",
+        "score": 0.9501302,
+        "topicality": 0.9501302
+      },
+      {
+        "description": "Food",
+        "mid": "/m/02wbm",
+        "score": 0.92737365,
+        "topicality": 0.92737365
+      },
+      {
+        "description": "Plum tomato",
+        "mid": "/m/09y4sj",
+        "score": 0.8994806,
+        "topicality": 0.8994806
+      },
+      {
+        "description": "Vegan nutrition",
+        "mid": "/m/052w_x",
+        "score": 0.82514644,
+        "topicality": 0.82514644
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.8185051,
+        "topicality": 0.8185051
+      },
+      {
+        "description": "Nightshade family",
+        "mid": "/m/06rv4",
+        "score": 0.80101436,
+        "topicality": 0.80101436
+      },
+      {
+        "description": "Vegetarian food",
+        "mid": "/m/07_lq",
+        "score": 0.79042935,
+        "topicality": 0.79042935
+      },
+      {
+        "description": "Produce",
+        "mid": "/m/036qh8",
+        "score": 0.78145605,
+        "topicality": 0.78145605
+      },
+      {
+        "description": "Cherry Tomatoes",
+        "mid": "/m/08b4g7",
+        "score": 0.7667199,
+        "topicality": 0.7667199
+      },
+      {
+        "description": "Whole food",
+        "mid": "/m/0cyz6w",
+        "score": 0.7524613,
+        "topicality": 0.7524613
+      },
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.7237995,
+        "topicality": 0.7237995
+      },
+      {
+        "description": "Superfood",
+        "mid": "/m/04jdhxy",
+        "score": 0.5005363,
+        "topicality": 0.5005363
+      },
+      {
+        "description": "Cherry",
+        "mid": "/m/0f8sw",
+        "score": 0.50052977,
+        "topicality": 0.50052977
+      }
+    ], 
+  "img6.jpg": [
+      {
+        "description": "Food",
+        "mid": "/m/02wbm",
+        "score": 0.92929596,
+        "topicality": 0.92929596
+      },
+      {
+        "description": "Natural foods",
+        "mid": "/m/08tlbj",
+        "score": 0.91132534,
+        "topicality": 0.91132534
+      },
+      {
+        "description": "Fruit",
+        "mid": "/m/02xwb",
+        "score": 0.9073752,
+        "topicality": 0.9073752
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.8630291,
+        "topicality": 0.8630291
+      },
+      {
+        "description": "Local food",
+        "mid": "/m/01hxyd",
+        "score": 0.83806723,
+        "topicality": 0.83806723
+      },
+      {
+        "description": "Vegetable",
+        "mid": "/m/0f4s2w",
+        "score": 0.8340038,
+        "topicality": 0.8340038
+      },
+      {
+        "description": "Common fig",
+        "mid": "/m/043nyj",
+        "score": 0.80656207,
+        "topicality": 0.80656207
+      },
+      {
+        "description": "Gem squash",
+        "mid": "/m/02qp0vy",
+        "score": 0.80074275,
+        "topicality": 0.80074275
+      },
+      {
+        "description": "Produce",
+        "mid": "/m/036qh8",
+        "score": 0.70917976,
+        "topicality": 0.70917976
+      },
+      {
+        "description": "Cucurbita",
+        "mid": "/m/012c4n",
+        "score": 0.5611463,
+        "topicality": 0.5611463
+      },
+      {
+        "description": "Superfood",
+        "mid": "/m/04jdhxy",
+        "score": 0.55894583,
+        "topicality": 0.55894583
+      }
+    ],
+  "img7.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Grass",
+        "mid": "/m/08t9c_",
+        "score": 0.8748446,
+        "topicality": 0.8748446
+      },
+      {
+        "description": "Grass family",
+        "mid": "/m/0fkrk",
+        "score": 0.7398683,
+        "topicality": 0.7398683
+      },
+      {
+        "description": "Wildflower",
+        "mid": "/m/03f35r",
+        "score": 0.6827095,
+        "topicality": 0.6827095
+      },
+      {
+        "description": "Subshrub",
+        "mid": "/m/03j2zx",
+        "score": 0.6572073,
+        "topicality": 0.6572073
+      },
+      {
+        "description": "Wallflower",
+        "mid": "/m/0g9ky",
+        "score": 0.6212943,
+        "topicality": 0.6212943
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.6009432,
+        "topicality": 0.6009432
+      },
+      {
+        "description": "Pink family",
+        "mid": "/m/01krpv",
+        "score": 0.5797163,
+        "topicality": 0.5797163
+      },
+      {
+        "description": "Groundcover",
+        "mid": "/m/018ssc",
+        "score": 0.56945735,
+        "topicality": 0.56945735
+      },
+      {
+        "description": "Forb",
+        "mid": "/m/02xsh_",
+        "score": 0.5405761,
+        "topicality": 0.5405761
+      },
+      {
+        "description": "Shrub",
+        "mid": "/m/0gqbt",
+        "score": 0.51834,
+        "topicality": 0.51834
+      },
+      {
+        "description": "Dianthus",
+        "mid": "/m/01xt1_",
+        "score": 0.5133756,
+        "topicality": 0.5133756
+      }
+    ], 
+  "img8.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Houseplant",
+        "mid": "/m/03fp41",
+        "score": 0.9553874,
+        "topicality": 0.9553874
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.83099425,
+        "topicality": 0.83099425
+      },
+      {
+        "description": "Flowerpot",
+        "mid": "/m/0fm3zh",
+        "score": 0.82912844,
+        "topicality": 0.82912844
+      },
+      {
+        "description": "Tree",
+        "mid": "/m/07j7r",
+        "score": 0.68692183,
+        "topicality": 0.68692183
+      },
+      {
+        "description": "Herb",
+        "mid": "/m/03gq1",
+        "score": 0.64445096,
+        "topicality": 0.64445096
+      }
+    ],
+  "img9.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Leaf",
+        "mid": "/m/09t49",
+        "score": 0.75946116,
+        "topicality": 0.75946116
+      },
+      {
+        "description": "Subshrub",
+        "mid": "/m/03j2zx",
+        "score": 0.5445244,
+        "topicality": 0.5445244
+      },
+      {
+        "description": "Geraniaceae",
+        "mid": "/m/01l6ls",
+        "score": 0.5425462,
+        "topicality": 0.5425462
+      },
+      {
+        "description": "Wildflower",
+        "mid": "/m/03f35r",
+        "score": 0.52589315,
+        "topicality": 0.52589315
+      }
+    ],
+  "img10.jpg": [
+      {
+        "description": "Eggplant",
+        "mid": "/m/0cdk2",
+        "score": 0.98655915,
+        "topicality": 0.98655915
+      },
+      {
+        "description": "Food",
+        "mid": "/m/02wbm",
+        "score": 0.9478714,
+        "topicality": 0.9478714
+      },
+      {
+        "description": "Vegetable",
+        "mid": "/m/0f4s2w",
+        "score": 0.91912585,
+        "topicality": 0.91912585
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.7865536,
+        "topicality": 0.7865536
+      },
+      {
+        "description": "Produce",
+        "mid": "/m/036qh8",
+        "score": 0.78145605,
+        "topicality": 0.78145605
+      },
+      {
+        "description": "Local food",
+        "mid": "/m/01hxyd",
+        "score": 0.7622188,
+        "topicality": 0.7622188
+      },
+      {
+        "description": "Natural foods",
+        "mid": "/m/08tlbj",
+        "score": 0.6674349,
+        "topicality": 0.6674349
+      },
+      {
+        "description": "Ingredient",
+        "mid": "/m/07xgrh",
+        "score": 0.589131,
+        "topicality": 0.589131
+      },
+      {
+        "description": "Cuisine",
+        "mid": "/m/01ykh",
+        "score": 0.54911363,
+        "topicality": 0.54911363
+      }
+    ],
+  "img11.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Purple",
+        "mid": "/m/09ggk",
+        "score": 0.8971495,
+        "topicality": 0.8971495
+      },
+      {
+        "description": "Artichoke thistle",
+        "mid": "/m/02rz26",
+        "score": 0.88617706,
+        "topicality": 0.88617706
+      },
+      {
+        "description": "Botany",
+        "mid": "/m/01bwr",
+        "score": 0.78692406,
+        "topicality": 0.78692406
+      },
+      {
+        "description": "Thistle",
+        "mid": "/m/06tzj3",
+        "score": 0.7712414,
+        "topicality": 0.7712414
+      },
+      {
+        "description": "Cynara",
+        "mid": "/m/01c0lb",
+        "score": 0.765608,
+        "topicality": 0.765608
+      },
+      {
+        "description": "European marsh thistle",
+        "mid": "/m/02_mr1",
+        "score": 0.75569665,
+        "topicality": 0.75569665
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.65975624,
+        "topicality": 0.65975624
+      },
+      {
+        "description": "Wildflower",
+        "mid": "/m/03f35r",
+        "score": 0.6360197,
+        "topicality": 0.6360197
+      },
+      {
+        "description": "Jasione",
+        "mid": "/m/0ft3cs",
+        "score": 0.55907893,
+        "topicality": 0.55907893
+      },
+      {
+        "description": "Annual plant",
+        "mid": "/m/0jqb",
+        "score": 0.54440963,
+        "topicality": 0.54440963
+      },
+      {
+        "description": "Plant stem",
+        "mid": "/m/01ttd6",
+        "score": 0.52816886,
+        "topicality": 0.52816886
+      },
+      {
+        "description": "Aster",
+        "mid": "/m/0k370",
+        "score": 0.52132505,
+        "topicality": 0.52132505
+      },
+      {
+        "description": "globe thistle",
+        "mid": "/m/033n8l",
+        "score": 0.51297575,
+        "topicality": 0.51297575
+      }
+    ],
+  "img12.jpg": [
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Leaf",
+        "mid": "/m/09t49",
+        "score": 0.983838,
+        "topicality": 0.983838
+      },
+      {
+        "description": "Tree",
+        "mid": "/m/07j7r",
+        "score": 0.9714167,
+        "topicality": 0.9714167
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Red",
+        "mid": "/m/06fvc",
+        "score": 0.9591579,
+        "topicality": 0.9591579
+      },
+      {
+        "description": "Black maple",
+        "mid": "/m/017mqg",
+        "score": 0.9434705,
+        "topicality": 0.9434705
+      },
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.9184452,
+        "topicality": 0.9184452
+      },
+      {
+        "description": "Woody plant",
+        "mid": "/m/02hnx9",
+        "score": 0.8837809,
+        "topicality": 0.8837809
+      },
+      {
+        "description": "Deciduous",
+        "mid": "/m/0hlzt",
+        "score": 0.84392345,
+        "topicality": 0.84392345
+      },
+      {
+        "description": "Botany",
+        "mid": "/m/01bwr",
+        "score": 0.8262245,
+        "topicality": 0.8262245
+      },
+      {
+        "description": "Sweet gum",
+        "mid": "/m/0297jm",
+        "score": 0.8137979,
+        "topicality": 0.8137979
+      },
+      {
+        "description": "Autumn",
+        "mid": "/m/0134l",
+        "score": 0.8061477,
+        "topicality": 0.8061477
+      },
+      {
+        "description": "New Mexico maple",
+        "mid": "/m/0fvjds",
+        "score": 0.7879292,
+        "topicality": 0.7879292
+      },
+      {
+        "description": "Maple leaf",
+        "mid": "/m/01rynr",
+        "score": 0.77965885,
+        "topicality": 0.77965885
+      },
+      {
+        "description": "Maple",
+        "mid": "/m/0cffdh",
+        "score": 0.7550962,
+        "topicality": 0.7550962
+      },
+      {
+        "description": "Vascular plant",
+        "mid": "/m/0hn6w",
+        "score": 0.5940688,
+        "topicality": 0.5940688
+      },
+      {
+        "description": "Annual plant",
+        "mid": "/m/0jqb",
+        "score": 0.58864737,
+        "topicality": 0.58864737
+      },
+      {
+        "description": "Tints and shades",
+        "mid": "/m/02q_bfg",
+        "score": 0.5603997,
+        "topicality": 0.5603997
+      },
+      {
+        "description": "Plant stem",
+        "mid": "/m/01ttd6",
+        "score": 0.52816886,
+        "topicality": 0.52816886
+      }
+    ],
+  "img13.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.9667621,
+        "topicality": 0.9667621
+      },
+      {
+        "description": "Dahlia",
+        "mid": "/m/0hzlg",
+        "score": 0.96607864,
+        "topicality": 0.96607864
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Pink",
+        "mid": "/m/01fklc",
+        "score": 0.91729134,
+        "topicality": 0.91729134
+      },
+      {
+        "description": "Botany",
+        "mid": "/m/01bwr",
+        "score": 0.80087125,
+        "topicality": 0.80087125
+      },
+      {
+        "description": "Peach",
+        "mid": "/m/03r18y",
+        "score": 0.7472894,
+        "topicality": 0.7472894
+      },
+      {
+        "description": "Annual plant",
+        "mid": "/m/0jqb",
+        "score": 0.68160015,
+        "topicality": 0.68160015
+      },
+      {
+        "description": "Daisy family",
+        "mid": "/m/0l5r",
+        "score": 0.63238925,
+        "topicality": 0.63238925
+      },
+      {
+        "description": "Floristry",
+        "mid": "/m/02hcw1",
+        "score": 0.6251433,
+        "topicality": 0.6251433
+      },
+      {
+        "description": "Camellia",
+        "mid": "/m/0k35l",
+        "score": 0.5711569,
+        "topicality": 0.5711569
+      },
+      {
+        "description": "Herbaceous plant",
+        "mid": "/m/01j03x",
+        "score": 0.54683685,
+        "topicality": 0.54683685
+      },
+      {
+        "description": "Floral design",
+        "mid": "/m/06gjp9",
+        "score": 0.54623824,
+        "topicality": 0.54623824
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.50788975,
+        "topicality": 0.50788975
+      }
+    ],
+  "img14.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.9745725,
+        "topicality": 0.9745725
+      },
+      {
+        "description": "Leaf",
+        "mid": "/m/09t49",
+        "score": 0.92555153,
+        "topicality": 0.92555153
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.8929684,
+        "topicality": 0.8929684
+      },
+      {
+        "description": "Botany",
+        "mid": "/m/01bwr",
+        "score": 0.80087125,
+        "topicality": 0.80087125
+      },
+      {
+        "description": "Terrestrial plant",
+        "mid": "/m/0fbflw",
+        "score": 0.6893239,
+        "topicality": 0.6893239
+      },
+      {
+        "description": "Anthurium",
+        "mid": "/m/03sxf_",
+        "score": 0.68126196,
+        "topicality": 0.68126196
+      },
+      {
+        "description": "Herbaceous plant",
+        "mid": "/m/01j03x",
+        "score": 0.647789,
+        "topicality": 0.647789
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.6027501,
+        "topicality": 0.6027501
+      },
+      {
+        "description": "Houseplant",
+        "mid": "/m/03fp41",
+        "score": 0.5239115,
+        "topicality": 0.5239115
+      },
+      {
+        "description": "Cyclamen",
+        "mid": "/m/02nrcc",
+        "score": 0.5140488,
+        "topicality": 0.5140488
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.50788975,
+        "topicality": 0.50788975
+      }
+    ],
+  "img15.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.9745725,
+        "topicality": 0.9745725
+      },
+      {
+        "description": "White",
+        "mid": "/m/083jv",
+        "score": 0.9705721,
+        "topicality": 0.9705721
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.93295324,
+        "topicality": 0.93295324
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.88417065,
+        "topicality": 0.88417065
+      },
+      {
+        "description": "Botany",
+        "mid": "/m/01bwr",
+        "score": 0.78692406,
+        "topicality": 0.78692406
+      },
+      {
+        "description": "Leaf",
+        "mid": "/m/09t49",
+        "score": 0.75946116,
+        "topicality": 0.75946116
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.69293225,
+        "topicality": 0.69293225
+      },
+      {
+        "description": "Begonia",
+        "mid": "/m/0c2m_",
+        "score": 0.62067837,
+        "topicality": 0.62067837
+      },
+      {
+        "description": "Impatiens",
+        "mid": "/m/02dj8m",
+        "score": 0.618756,
+        "topicality": 0.618756
+      },
+      {
+        "description": "Plant stem",
+        "mid": "/m/01ttd6",
+        "score": 0.52816886,
+        "topicality": 0.52816886
+      },
+      {
+        "description": "Wildflower",
+        "mid": "/m/03f35r",
+        "score": 0.52589315,
+        "topicality": 0.52589315
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.5232687,
+        "topicality": 0.5232687
+      },
+      {
+        "description": "Begonia family",
+        "mid": "/m/09wnfz",
+        "score": 0.5053005,
+        "topicality": 0.5053005
+      }
+    ],
+  "img16.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Purple",
+        "mid": "/m/09ggk",
+        "score": 0.9151007,
+        "topicality": 0.9151007
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.8396804,
+        "topicality": 0.8396804
+      },
+      {
+        "description": "Columbine",
+        "mid": "/m/01zyd",
+        "score": 0.6557528,
+        "topicality": 0.6557528
+      },
+      {
+        "description": "Bellflower family",
+        "mid": "/m/03h6l4",
+        "score": 0.6556306,
+        "topicality": 0.6556306
+      },
+      {
+        "description": "Canada columbine",
+        "mid": "/m/05xl0b",
+        "score": 0.6409955,
+        "topicality": 0.6409955
+      },
+      {
+        "description": "Wildflower",
+        "mid": "/m/03f35r",
+        "score": 0.5966335,
+        "topicality": 0.5966335
+      },
+      {
+        "description": "Lily family",
+        "mid": "/m/016g2_",
+        "score": 0.5647047,
+        "topicality": 0.5647047
+      },
+      {
+        "description": "Lily",
+        "mid": "/m/0jqgx",
+        "score": 0.55867916,
+        "topicality": 0.55867916
+      },
+      {
+        "description": "Fawn lily",
+        "mid": "/m/0fshs",
+        "score": 0.54265976,
+        "topicality": 0.54265976
+      },
+      {
+        "description": "Bellflower",
+        "mid": "/m/02wbh5",
+        "score": 0.5128594,
+        "topicality": 0.5128594
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.50349534,
+        "topicality": 0.50349534
+      }
+    ],
+  "img17.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.9794608,
+        "topicality": 0.9794608
+      },
+      {
+        "description": "Pink",
+        "mid": "/m/01fklc",
+        "score": 0.97067523,
+        "topicality": 0.97067523
+      },
+      {
+        "description": "Rose",
+        "mid": "/m/06m11",
+        "score": 0.9522681,
+        "topicality": 0.9522681
+      },
+      {
+        "description": "Rose family",
+        "mid": "/m/06dmh",
+        "score": 0.9343942,
+        "topicality": 0.9343942
+      },
+      {
+        "description": "Rosa × centifolia",
+        "mid": "/m/0dq6zp",
+        "score": 0.9278816,
+        "topicality": 0.9278816
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.92531127,
+        "topicality": 0.92531127
+      },
+      {
+        "description": "Garden roses",
+        "mid": "/m/0fpjlj9",
+        "score": 0.9163455,
+        "topicality": 0.9163455
+      },
+      {
+        "description": "Floribunda",
+        "mid": "/m/0dlk0vw",
+        "score": 0.9088622,
+        "topicality": 0.9088622
+      },
+      {
+        "description": "Rose order",
+        "mid": "/m/06cf7",
+        "score": 0.83676,
+        "topicality": 0.83676
+      },
+      {
+        "description": "Japanese Camellia",
+        "mid": "/m/02wv8sl",
+        "score": 0.82280064,
+        "topicality": 0.82280064
+      },
+      {
+        "description": "Botany",
+        "mid": "/m/01bwr",
+        "score": 0.82196826,
+        "topicality": 0.82196826
+      },
+      {
+        "description": "China rose",
+        "mid": "/m/026rs28",
+        "score": 0.7914481,
+        "topicality": 0.7914481
+      },
+      {
+        "description": "Camellia",
+        "mid": "/m/0k35l",
+        "score": 0.7834913,
+        "topicality": 0.7834913
+      },
+      {
+        "description": "Peony",
+        "mid": "/m/027lt5",
+        "score": 0.74542844,
+        "topicality": 0.74542844
+      },
+      {
+        "description": "common peony",
+        "mid": "/m/059__59",
+        "score": 0.73704886,
+        "topicality": 0.73704886
+      },
+      {
+        "description": "Chinese peony",
+        "mid": "/m/09f4n0",
+        "score": 0.7131209,
+        "topicality": 0.7131209
+      },
+      {
+        "description": "Rosa wichuraiana",
+        "mid": "/m/0k28f6f",
+        "score": 0.68502045,
+        "topicality": 0.68502045
+      },
+      {
+        "description": "Theaceae",
+        "mid": "/m/02w_0z",
+        "score": 0.6318636,
+        "topicality": 0.6318636
+      },
+      {
+        "description": "Rosa gallica",
+        "mid": "/m/06d1dh",
+        "score": 0.61262095,
+        "topicality": 0.61262095
+      },
+      {
+        "description": "Shrub",
+        "mid": "/m/0gqbt",
+        "score": 0.60126764,
+        "topicality": 0.60126764
+      },
+      {
+        "description": "Carnation",
+        "mid": "/m/0k9y1",
+        "score": 0.5858896,
+        "topicality": 0.5858896
+      },
+      {
+        "description": "Subshrub",
+        "mid": "/m/03j2zx",
+        "score": 0.58242726,
+        "topicality": 0.58242726
+      },
+      {
+        "description": "Pink family",
+        "mid": "/m/01krpv",
+        "score": 0.5593604,
+        "topicality": 0.5593604
+      },
+      {
+        "description": "Annual plant",
+        "mid": "/m/0jqb",
+        "score": 0.54440963,
+        "topicality": 0.54440963
+      },
+      {
+        "description": "Camellia sasanqua",
+        "mid": "/m/0f25_t",
+        "score": 0.5433166,
+        "topicality": 0.5433166
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.50349534,
+        "topicality": 0.50349534
+      }
+    ],
+  "img18.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.9375665,
+        "topicality": 0.9375665
+      },
+      {
+        "description": "Dahlia",
+        "mid": "/m/0hzlg",
+        "score": 0.9153787,
+        "topicality": 0.9153787
+      },
+      {
+        "description": "Annual plant",
+        "mid": "/m/0jqb",
+        "score": 0.7522865,
+        "topicality": 0.7522865
+      },
+      {
+        "description": "Floristry",
+        "mid": "/m/02hcw1",
+        "score": 0.7097367,
+        "topicality": 0.7097367
+      },
+      {
+        "description": "barberton daisy",
+        "mid": "/m/02p43p3",
+        "score": 0.644604,
+        "topicality": 0.644604
+      },
+      {
+        "description": "Floral design",
+        "mid": "/m/06gjp9",
+        "score": 0.6213786,
+        "topicality": 0.6213786
+      },
+      {
+        "description": "Cut flowers",
+        "mid": "/m/0ds61d1",
+        "score": 0.61520123,
+        "topicality": 0.61520123
+      },
+      {
+        "description": "Daisy family",
+        "mid": "/m/0l5r",
+        "score": 0.6098366,
+        "topicality": 0.6098366
+      },
+      {
+        "description": "Pink family",
+        "mid": "/m/01krpv",
+        "score": 0.5593604,
+        "topicality": 0.5593604
+      },
+      {
+        "description": "Perennial plant",
+        "mid": "/m/036p57",
+        "score": 0.50788975,
+        "topicality": 0.50788975
+      },
+      {
+        "description": "Dianthus",
+        "mid": "/m/01xt1_",
+        "score": 0.5056931,
+        "topicality": 0.5056931
+      }
+    ],
+  "img19.jpg": [
+      {
+        "description": "Flower Arranging",
+        "mid": "/m/0ggjrhd",
+        "score": 0.9811228,
+        "topicality": 0.9811228
+      },
+      {
+        "description": "Floristry",
+        "mid": "/m/02hcw1",
+        "score": 0.9754988,
+        "topicality": 0.9754988
+      },
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.9745725,
+        "topicality": 0.9745725
+      },
+      {
+        "description": "Floral design",
+        "mid": "/m/06gjp9",
+        "score": 0.95491326,
+        "topicality": 0.95491326
+      },
+      {
+        "description": "Cut flowers",
+        "mid": "/m/0ds61d1",
+        "score": 0.95255244,
+        "topicality": 0.95255244
+      },
+      {
+        "description": "Pink",
+        "mid": "/m/01fklc",
+        "score": 0.94157386,
+        "topicality": 0.94157386
+      },
+      {
+        "description": "Bouquet",
+        "mid": "/m/02p6k8p",
+        "score": 0.9144674,
+        "topicality": 0.9144674
+      },
+      {
+        "description": "Garden roses",
+        "mid": "/m/0fpjlj9",
+        "score": 0.89704686,
+        "topicality": 0.89704686
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.87901133,
+        "topicality": 0.87901133
+      },
+      {
+        "description": "Wreath",
+        "mid": "/m/01l00t",
+        "score": 0.84809107,
+        "topicality": 0.84809107
+      },
+      {
+        "description": "Artificial flower",
+        "mid": "/m/07sg02",
+        "score": 0.8254095,
+        "topicality": 0.8254095
+      },
+      {
+        "description": "Christmas decoration",
+        "mid": "/m/05fc9mj",
+        "score": 0.8155057,
+        "topicality": 0.8155057
+      },
+      {
+        "description": "Rose",
+        "mid": "/m/06m11",
+        "score": 0.8027723,
+        "topicality": 0.8027723
+      },
+      {
+        "description": "Spring",
+        "mid": "/m/01txr2",
+        "score": 0.71864057,
+        "topicality": 0.71864057
+      },
+      {
+        "description": "Rose family",
+        "mid": "/m/06dmh",
+        "score": 0.672349,
+        "topicality": 0.672349
+      },
+      {
+        "description": "Hydrangea",
+        "mid": "/m/0k3b9",
+        "score": 0.58813673,
+        "topicality": 0.58813673
+      },
+      {
+        "description": "Interior design",
+        "mid": "/m/0h8nzzj",
+        "score": 0.5651285,
+        "topicality": 0.5651285
+      },
+      {
+        "description": "Rosa × centifolia",
+        "mid": "/m/0dq6zp",
+        "score": 0.54966736,
+        "topicality": 0.54966736
+      },
+      {
+        "description": "Rose order",
+        "mid": "/m/06cf7",
+        "score": 0.5495404,
+        "topicality": 0.5495404
+      },
+      {
+        "description": "Cornales",
+        "mid": "/m/0f3s6",
+        "score": 0.5246599,
+        "topicality": 0.5246599
+      }
+    ],
+  "img20.jpg": [
+      {
+        "description": "Flower",
+        "mid": "/m/0c9ph5",
+        "score": 0.99559903,
+        "topicality": 0.99559903
+      },
+      {
+        "description": "Flowering plant",
+        "mid": "/m/04sjm",
+        "score": 0.98545843,
+        "topicality": 0.98545843
+      },
+      {
+        "description": "Plant",
+        "mid": "/m/05s2s",
+        "score": 0.9635069,
+        "topicality": 0.9635069
+      },
+      {
+        "description": "Petal",
+        "mid": "/m/016q19",
+        "score": 0.8258623,
+        "topicality": 0.8258623
+      },
+      {
+        "description": "Shrub",
+        "mid": "/m/0gqbt",
+        "score": 0.7726662,
+        "topicality": 0.7726662
+      },
+      {
+        "description": "Azalea",
+        "mid": "/m/011_xr",
+        "score": 0.73305166,
+        "topicality": 0.73305166
+      },
+      {
+        "description": "Rhododendron",
+        "mid": "/m/0b1my",
+        "score": 0.67264396,
+        "topicality": 0.67264396
+      },
+      {
+        "description": "Alstroemeriaceae",
+        "mid": "/m/02vcqj",
+        "score": 0.58645153,
+        "topicality": 0.58645153
+      },
+      {
+        "description": "Caesalpinia",
+        "mid": "/m/084nq3",
+        "score": 0.5709732,
+        "topicality": 0.5709732
+      },
+      {
+        "description": "Honeysuckle family",
+        "mid": "/m/01d9xk",
+        "score": 0.537173,
+        "topicality": 0.537173
+      },
+      {
+        "description": "Honeysuckle",
+        "mid": "/m/0k34p",
+        "score": 0.5230572,
+        "topicality": 0.5230572
+      },
+      {
+        "description": "Borage family",
+        "mid": "/m/0kjyq",
+        "score": 0.5180349,
+        "topicality": 0.5180349
+      },
+      {
+        "description": "Cestrum",
+        "mid": "/m/07_q5t",
+        "score": 0.50159574,
+        "topicality": 0.50159574
+      }
+    ]
+  }

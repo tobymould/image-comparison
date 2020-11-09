@@ -1,5 +1,6 @@
-
-// 0) REFERENCE DATA
+// -------------------------------------------------------------------------------
+// 0) Lookup Table 
+// -------------------------------------------------------------------------------
 const lookUpTable = [
   {
     generalCategory: ['Fruit', 'Vegetable', "Flowering plant", 'Tree', 'Cut flowers']
@@ -12,6 +13,8 @@ const lookUpTable = [
 // -------------------------------------------------------------------------------
 // 1) RAW FUNCTIONS
 // -------------------------------------------------------------------------------
+
+// a) Fetches json files 
 const getJsonData = async (url) => {
   const response = await fetch(`./${url}`);
   errorHandler(response, url);
@@ -20,18 +23,23 @@ const getJsonData = async (url) => {
   return data;
 }
 
+// b) Deletes labels with accuracy score less than a set threshold
 const removeLowAccuracyLabels = (imageObject) => {
 
   imageObject.labelsArray.map(labelObject => {
+    // console.log('test: ', Object.keys(labelObject));
     Object.keys(labelObject)
     .filter(key => labelObject.score < 0.6)
     .forEach(key => delete labelObject[key])
-    
-  });
+    // .filter(key => key.length == 0)
+    // .forEach(key => delete labelObject)
+    // // console.log('test3: ', );
 
+  });
   return imageObject;
 }
 
+// c) Filters each label of each image to show only 'description' and 'score' values
 const filterLabelsArray = (imageObject) => {
   const filteredLabelsArray = imageObject.labelsArray.map((labelObject => {
     labelObject.score = labelObject.score.toFixed(2);
@@ -43,19 +51,22 @@ const filterLabelsArray = (imageObject) => {
   return imageObjectFiltered;
 }
 
+
 const cleanDBData = (data) => {
   const arrayOfImageDataObjects = Object.entries(data).map((subArray) => {
     return {imageName: subArray[0], labelsArray: subArray[1]}
   }) 
-  // C) Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
   
+  // C) Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
   arrayOfImageDataObjects.forEach(((imageObject, index) => {
     const imageObjectFiltered = filterLabelsArray(imageObject);
+    
     return arrayOfImageDataObjects[index] = imageObjectFiltered
   }))
 
   // D) Iterate the 'labelsArray' nested-array again, and delete all objects with an accuracy score < 84% (because low accuracy match).
   arrayOfImageDataObjects.forEach((imageObject => {
+    // console.log(imageObject.labelsArray)
     removeLowAccuracyLabels(imageObject)
   }))
 
@@ -65,7 +76,8 @@ const cleanDBData = (data) => {
 
 const cleanImgData = (data) => {
   const isolatedLabelObject = Object.entries(data).find((subArrays) => subArrays.includes("labelAnnotations"));
-  const imageObject = {imageName: 'submittedImage', labelsArray: isolatedLabelObject[1]} 
+  // console.log(isolatedLabelObject);
+  const imageObject = {imageName: `submittedImage`, labelsArray: isolatedLabelObject[1]} 
 
   // C) Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
   const imageObjectFiltered = filterLabelsArray(imageObject);
@@ -120,36 +132,74 @@ const typeMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => {
 // 2) EXECUTION FUNCTIONS - FUNCTIONS THAT CALLOUT OTHER SIMPLER FUNCTIONS TO RUN.
 // -------------------------------------------------------------------------------
 
-const ProcessDataFromDB = async () => {
-  const dataFromDB = await getJsonData('./data/data.json')
-  const cleanedDataDB = cleanDBData(dataFromDB);
-  return cleanedDataDB
-}
 
 const ProcessDataFromImg = async () => {
-  const dataFromSubmittedImage = await getJsonData('./data/image5.json')
-  const cleanedDataImg = cleanImgData(dataFromSubmittedImage);
+
   return cleanedDataImg
 }
 
+const ProcessDataFromDB = async (dataFromSubmitted) => {
+
+  return cleanedDataDB
+}
+
+const test = () => {
+  arrayOfImageDataObjects.filter(((imageObject, index) => {
+    const submitted1Description = dataFromSubmitted.labelsArray[0].description;
+    const submitted1Score = dataFromSubmitted.labelsArray[0].score;
+    const DB1Description = imageObject.labelsArray[0].description;
+    const DB1Score = imageObject.labelsArray[0].score;
+  
+    if (submitted1Description === DB1Description && submitted1Score === DB1Score){
+      return imageObject;
+    }
+    // if (labelObject.description === dataFromSubmitted  && labelObject.description === dataFromSubmitted)
+    // imageObject.labelsArray[0]
+    console.log('test5: ', dataFromSubmitted.labelsArray[0].description);
+    console.log('test6: ', dataFromSubmitted.labelsArray[0].score);
+    console.log('test7: ', imageObject.labelsArray[0].description);
+    console.log('test8: ', imageObject.labelsArray[0].score);
+    
+    
+    // .forEach(labelObject => {
+  
+  
+    // })
+  
+  }))
+
+}
+
+
 const runTheComparision = async () => {
     try {
-      const dataFromDB = await ProcessDataFromDB();
-      const dataFromSubmitted = await ProcessDataFromImg();
+      // 1) Retrieve Data
+      const dataFromSubmittedImage = await getJsonData('./data/submittedimage/image10.json')
+      const cleanedDataImg = cleanImgData(dataFromSubmittedImage);
 
-      const typeCategoryMatch = typeCategoryCheckAlgorithm(dataFromSubmitted);
-      
-      if (typeCategoryMatch.length !== 0){
-        const imageMatch = typeMatchToDBImagesAlgorithm(dataFromDB, typeCategoryMatch);
-      } else {
-        const colourCategoryMatch = colourCategoryCheckAlgorithm(dataFromSubmitted);
-      }
-      
+      const dataFromDB = await getJsonData('./data/dataUpdated.json')
+      const cleanedDataDB = cleanDBData(dataFromDB);
 
-      // imageMatch.length > 3 ? specificCategoryCheckerAlgorithm() : null;
+      // const dataFromSubmitted = await ProcessDataFromImg();
+      // const dataFromDB = await ProcessDataFromDB(dataFromSubmitted);
+
+      // const ignoreImageRepeat = test();
+
+      // 2) Match submitted image with lookup category, then to DB
+      const typeCategoryMatch = typeCategoryCheckAlgorithm(cleanedDataImg);
+      const imageMatch = typeMatchToDBImagesAlgorithm(cleanedDataDB, typeCategoryMatch);
+      
+      // 3) If not matches, try to match by plant colour
+      // if (typeCategoryMatch.length === 0){
+      //   const colourCategoryMatch = colourCategoryCheckAlgorithm(dataFromSubmitted);
+      // } 
+      
+      // 4) If no matches are made, match by 'Plant' (the broadest category) so another product is suggested at least.
+
+      // imageMatch.length >=1 ? plantCategoryCheckerAlgorithm() : null;
       
       console.log('dataFromDB: ', dataFromDB);
-      console.log('dataFromSubmitted: ', dataFromSubmitted);
+      console.log('cleanedDataImg: ', cleanedDataImg);
       console.log('TypeCategoryMatch: ', typeCategoryMatch);
       console.log('imageMatch: ', imageMatch);
 
@@ -164,6 +214,19 @@ const runTheComparision = async () => {
 // 3) STARTS THE SCRIPT
 runTheComparision();
 
+
+  // let randomNumber;
+
+  // if (randomNumber !== 19){
+  //   randomNumber += 1;
+  // } else {
+  //   randomNumber = 0;
+  // }
+
+  // test = 'img1.jpg'
+  // const randomImageChooser = data[0].
+
+  // console.log('data: ', randomImageChooser)
 
 
 // 
