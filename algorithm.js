@@ -40,11 +40,11 @@ const removeLowAccuracyLabels = (imageObject) => {
     .filter(key => labelObject.score < 0.6)
     .forEach(key => delete labelObject[key])
   });
-  
+
   return imageObject;
 }
 
-// d) Filters each label of each image to show only 'description' and 'score' values.
+// d) Filters each label of each image to show only 'description' and 'score' values ('score' values to 2 decimal places only), and replaces the imageObjects old labelArray with the new filteredLabelsArray.
 const filterLabelsArray = (imageObject) => {
   const filteredLabelsArray = imageObject.labelsArray.map((labelObject => {
     labelObject.score = labelObject.score.toFixed(2);
@@ -71,7 +71,7 @@ const randomNumberGenerator = () => {
 // 2) PROCEDURAL FUNCTIONS - that nest the BASIC FUNCTIONS
 // -------------------------------------------------------------------------------
 
-// a) Iterates through the DB of labels for the 20 images, converts DB list to an array of image OBJECTS, and runs functions (b) & (c) on each. 
+// a) Iterates through the DB of labels for the 20 images, converts DB list to an array of imageObjects, and runs functions (1c) & (1d) on each. 
 const cleanDBData = (data) => {
   const arrayOfImageDataObjects = Object.entries(data).map((subArray) => {
     return {imageName: subArray[0], labelsArray: subArray[1]}
@@ -86,7 +86,6 @@ const cleanDBData = (data) => {
 
   // Iterate the 'labelsArray' nested-array again, and delete all objects with an accuracy score < 84% (because low accuracy match).
   arrayOfImageDataObjects.forEach((imageObject => {
-    // console.log(imageObject.labelsArray)
     removeLowAccuracyLabels(imageObject)
   }))
 
@@ -94,11 +93,12 @@ const cleanDBData = (data) => {
   return arrayOfImageDataObjects;
 }
 
-// b) Iterates through the submitted image object, filters to keep the 'labelAnnotations' array, and runs functions (b) & (c) on each of its labels. 
+// b) Iterates through the 'submitted image' object, filters to keep the 'labelAnnotations' array, and runs functions (b) & (c) on each of its labels. 
 const cleanImgData = (data) => {
   const number = randomNumberGenerator();
+  console.log('%cImageChosen: ', "color:pink", Object.entries(data[number])[0][0])
   const isolatedLabelObject = Object.entries(data[number][`img${number+1}.jpg`]).find((subArrays) => subArrays.includes("labelAnnotations"));
-  const imageObject = {imageName: `submittedImage`, labelsArray: isolatedLabelObject[1]} 
+  const imageObject = {imageName: `submitted_img${number+1}`, labelsArray: isolatedLabelObject[1]} 
 
   // Iterate the 'labelsArray' nested-array, and delete all properties which are not 'description' or 'score' (because useless).
   const imageObjectFiltered = filterLabelsArray(imageObject);
@@ -107,7 +107,6 @@ const cleanImgData = (data) => {
 
   return imageObjectFiltered;
 }
-
 
 // c) Compares the submitted image labels for a match with 1 of the 5 'generalCategories' in the lookup table.
 const typeCategoryCheckAlgorithm = (dataFromSubmitted) => {
@@ -122,7 +121,7 @@ const typeCategoryCheckAlgorithm = (dataFromSubmitted) => {
   return categoryMatched;
 }
 
-// d) Same as (2c) but compares with the 'colourCategories' in the lookup table.
+// d) (NOT IMPLMENTED) - Same as (2c) but compares with the 'colourCategories' in the lookup table.
 const colourCategoryCheckAlgorithm = (dataFromSubmitted) => {
   let categoryMatched;
   
@@ -131,10 +130,11 @@ const colourCategoryCheckAlgorithm = (dataFromSubmitted) => {
       labelObject.description === category ? categoryMatched = category : null
     )
   })
+
   return categoryMatched;
 }
 
-// e) Compares the matched term to the 'generalCategory' from lookup table from the submitted image for matches in the DB.
+// e) Compares the matched term from (2c) to the 'generalCategory' from lookup table from the submitted image for matches in the DB.
 const typeMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => {
   const matchingImages = [];
 
@@ -147,7 +147,7 @@ const typeMatchToDBImagesAlgorithm = (dataFromDB, categoryOfSubmittedImage) => {
   return matchingImages;
 }
 
-// f) Method to hide the duplicate image prior to the comparison process
+// f) (NOT IMPLMENTED) - Method to hide the duplicate image prior to the comparison process.
 const deleteImageRepeat = () => {
   arrayOfImageDataObjects.filter(((imageObject, index) => {
     const submitted1Description = dataFromSubmitted.labelsArray[0].description;
@@ -168,35 +168,38 @@ const deleteImageRepeat = () => {
 
 const runTheComparision = async () => {
     try {
-      // STEP-1) Retrieve submitted image data and clean it
+      // STEP-1) Retrieve submitted image data and clean it.
       const dataFromSubmittedImage = await getJsonData('./data/testDataArray.json')
       const cleanedDataImg = cleanImgData(dataFromSubmittedImage);
       
-      // STEP-2) Retrieve submitted image data and clean it
+      // STEP-2) Retrieve submitted image data and clean it.
       const dataFromDB = await getJsonData('./data/dataUpdated.json')
       const cleanedDataDB = cleanDBData(dataFromDB);
 
-      // STEP-3) Match submitted image with lookup category, then to DB
+      // STEP-3) Match submitted image with lookup category, then to DB.
       const typeCategoryMatch = typeCategoryCheckAlgorithm(cleanedDataImg);
-      const imageMatch = typeMatchToDBImagesAlgorithm(cleanedDataDB, typeCategoryMatch);
-    
-      const finalSuggestionList = imageMatch.slice(0, 4);
+      let imageMatch = typeMatchToDBImagesAlgorithm(cleanedDataDB, typeCategoryMatch);
       
-      // 3) If not matches, try to match by plant colour
+      // STEP-4) (NOT IMPLEMENTED) - Match by plant colour. Would use this to whittle down STEP-3 list with increased specificity.
       // if (typeCategoryMatch.length === 0){
       //   const colourCategoryMatch = colourCategoryCheckAlgorithm(dataFromSubmitted);
       // } 
-      
-      // 4) If no matches are made, match by 'Plant' (the broadest category) so another product is suggested at least.
 
-      // imageMatch.length >=1 ? plantCategoryCheckerAlgorithm() : null;
+      // STEP-5)- If no matches are made, match by 'Plant' (the broadest category) so another product is suggested at least.
+      if (typeCategoryMatch === undefined) {
+        imageMatch = typeMatchToDBImagesAlgorithm(cleanedDataDB, 'Plant')
+        console.log('%cSTEP-5-result (imageMatch to "Plant" if no match): ', 'color:teal', imageMatch);
+      } 
       
-      console.log('dataFromDB: ', dataFromDB);
-      console.log('cleanedDataImg: ', cleanedDataImg);
-      console.log('TypeCategoryMatch: ', typeCategoryMatch);
-      console.log('imageMatch: ', imageMatch);
-      console.log('imageMatch.length: ', imageMatch.length);
-      console.log('finalSuggestionList: ', finalSuggestionList);
+      // STEP-6) Limit the suggestions list to a maximum of 4 items
+      let finalSuggestionList = imageMatch.slice(0, 4);
+
+      console.log('%cSTEP-1-result: database entries (cleanedDataDB) ', 'color:green', cleanedDataDB);
+      console.log('%cSTEP-2-result: submitted image (cleanedDataImg) ', 'color:turquoise', cleanedDataImg);
+      console.log('%cSTEP-3a-result: submitted category match (TypeCategoryMatch) ', 'color:violet', typeCategoryMatch);
+      console.log('%cSTEP-3b-result: suggested images list (imageMatch) ', 'color:orange', imageMatch);
+      console.log('%cSTEP-3-result: list length before splice ', 'color:yellow', imageMatch.length);
+      console.log('%cSTEP-6-result: ...after splice (finalSuggestionList) ', 'color:red', finalSuggestionList);
 
 
     } catch(err){

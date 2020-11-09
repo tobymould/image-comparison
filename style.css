@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+span:first-child {
+  color: #00a1f1;
+}
+
+span:nth-child(2) {
+  color: #f65314;
+}
+span:nth-child(3) {
+  color: #ffbb00;
+}
+span:nth-child(4) {
+  color: #00a1f1;
+}
+span:nth-child(5) {
+  color: #7cbb00;
+}
+span:nth-child(6) {
+  color: #f65314;
+}
