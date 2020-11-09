@@ -36,15 +36,11 @@ const errorHandler = (response, msg) => {
 const removeLowAccuracyLabels = (imageObject) => {
 
   imageObject.labelsArray.map(labelObject => {
-    // console.log('test: ', Object.keys(labelObject));
     Object.keys(labelObject)
     .filter(key => labelObject.score < 0.6)
     .forEach(key => delete labelObject[key])
-    // .filter(key => key.length == 0)
-    // .forEach(key => delete labelObject)
-    // // console.log('test3: ', );
-
   });
+  
   return imageObject;
 }
 
